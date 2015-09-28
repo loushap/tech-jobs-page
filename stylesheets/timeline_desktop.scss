@@ -309,7 +309,8 @@
     }
   }
   #dot8 {
-    @include top-callout(170);
+    @include top-callout(160);
+    .callout { left: -50px; }
     position: absolute;
     left: 800px;
     top: 177px;
@@ -321,7 +322,7 @@
     }
     h4 {
       position: absolute;
-      left: 0px;
+      left: -20px;
       width: 180px;
       font-size: 1em;
       top: -22px;

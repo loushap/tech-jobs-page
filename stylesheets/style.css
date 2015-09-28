@@ -942,7 +942,7 @@ footer {
         top: -85px;
         left: -28px;
         height: 50px;
-        width: 170;
+        width: 160;
         margin: 18px 20px 3px;
         padding: 44px 20px;
         background-color: #eef4f9;
@@ -966,6 +966,8 @@ footer {
         _border-right-color: pink;
         _border-left-color: pink;
         _filter: chroma(color=pink); }
+      .timeline #dot8 .callout {
+        left: -50px; }
       .timeline #dot8 h3 {
         position: absolute;
         left: -84px;
@@ -973,7 +975,7 @@ footer {
         top: 15px; }
       .timeline #dot8 h4 {
         position: absolute;
-        left: 0px;
+        left: -20px;
         width: 180px;
         font-size: 1em;
         top: -22px; }
