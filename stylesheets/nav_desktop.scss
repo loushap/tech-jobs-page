@@ -18,7 +18,6 @@
   position: fixed;
 }
 nav {
-  background-color: black;
   @include row();
   .nav-list { display: block; }
   button {visibility: hidden;}
