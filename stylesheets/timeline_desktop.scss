@@ -1,4 +1,71 @@
-.key-dates { 
+@mixin top-callout($width){
+  .callout {
+    position: relative;
+    top: -85px;
+    left: -28px;
+    height: 50px;
+    width: $width;
+    margin: 18px 20px 3px;
+    padding: 44px 20px;
+    background-color: #eef4f9;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+  }
+  .callout .notch {
+    position: absolute;
+    top: 86px;
+    left: 77px;
+    margin: 0;
+    border-top: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 18px solid #eef4f9;
+    padding: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+  }
+}
+
+@mixin bottom-callout($width){
+  .callout {
+    position: relative;
+    top: 59px;
+    left: -25px;
+    height: 50px;
+    width: $width;
+    margin: 18px 20px 3px;
+    padding: 44px 20px;
+    background-color: #eef4f9;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+  }
+  .callout .notch {
+    position: absolute;
+    top: -18px;
+    left: 73px;
+    margin: 0;
+    border-top: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid #eef4f9;
+    padding: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+  }
+}
+.key-dates {
   position: relative;
   @include clearfix;
   h2 {
@@ -9,23 +76,23 @@
   width: 100%;
   position: relative;
   @include clearfix;
-  .key-date { 
+  .key-date {
     width: 200px;
     height: 200px;
-    span { 
-      margin-left: -8.5px; 
+    span {
+      margin-left: -8.5px;
       top: 40px;
       left: 80px;
     }
     h3 {
       width: 180px;
       left: 20px;
-    } 
+    }
     h4 {
       width: 180px;
       left: 10px;
     }
-  } 
+  }
    #dot1 {
     left: -115px;
     top: 177px;
@@ -37,7 +104,7 @@
     }
     h4 {
       position: absolute;
-      left: 83px;
+      left: 63px;
       width: 180px;
       font-size: 1em;
       top: -22px;
@@ -123,6 +190,7 @@
     }
   }
   #dot3 {
+    @include top-callout(155);
     left: 170px;
     top: 177px;
     h3 {
@@ -138,138 +206,75 @@
       font-size: 1em;
       top: -23px;
     }
-    .callout {
-      position: relative;
-      top: -85px;
-      left: -28px;
-      height: 50px;
-      width: 155px;
-      margin: 18px 20px 3px;
-      padding: 44px 20px;
-      background-color: #eef4f9;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-    }
-    .callout .notch {
-      position: absolute;
-      top: 86px;
-      left: 77px;
-      margin: 0;
-      border-top: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 18px solid #eef4f9;
-      padding: 0;
-      width: 0;
-      height: 0;
-      font-size: 0;
-      line-height: 0;
-      _border-right-color: pink;
-      _border-left-color: pink;
-      _filter: chroma(color=pink);
-    }
   }
-/*  #dot4 {
+  #dot4 {
+    @include bottom-callout(170);
     left: 295px;
     top: 177px;
     h3 {
       position: absolute;
       left: -12px;
-      width: 230px;
       top: 15px;
     }
     h4 {
       position: absolute;
-      left: 31px;
-      width: 180px;
       font-size: 1em;
-      top: 130px;
-    }
-    .callout {
-      position: relative;
-      top: 59px;
-      left: -25px;
-      height: 50px;
-      width: 205px;
-      margin: 18px 20px 3px;
-      padding: 44px 20px;
-      background-color: #eef4f9;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-    }
-    .callout .notch {
-      position: absolute;
-      top: -18px;
-      left: 73px;
-      margin: 0;
-      border-top: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 18px solid #eef4f9;
-      padding: 0;
-      width: 0;
-      height: 0;
-      font-size: 0;
-      line-height: 0;
-      _border-right-color: pink;
-      _border-left-color: pink;
-      _filter: chroma(color=pink);
+      top: 122px;
     }
   }
-  #dot5 {
-    position: absolute;
-    left: 408px;
-    top: 177px;
-    h3 {
-      position: absolute;
-      left: -90px;
-      width: 250px;
-      top: 15px;
-    }
-    h4 {
-      position: absolute;
-      left: 5px;
-      width: 180px;
-      font-size: 1em;
-      top: -16px;
-    }
-    .callout {
-      position: relative;
-      top: -85px;
-      left: -19px;
-      height: 50px;
-      width: 155px;
-      margin: 18px 20px 3px;
-      padding: 44px 20px;
-      background-color: #eef4f9;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-    }
-    .callout .notch {
-      position: absolute;
-      top: 86px;
-      left: 67px;
-      margin: 0;
-      border-top: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 18px solid #eef4f9;
-      padding: 0;
-      width: 0;
-      height: 0;
-      font-size: 0;
-      line-height: 0;
-      _border-right-color: pink;
-      _border-left-color: pink;
-      _filter: chroma(color=pink);
-    }
-  }*/
+  // #dot5 {
+  //   position: absolute;
+  //   left: 408px;
+  //   top: 177px;
+  //   h3 {
+  //     position: absolute;
+  //     left: -90px;
+  //     width: 250px;
+  //     top: 15px;
+  //   }
+  //   h4 {
+  //     position: absolute;
+  //     left: 5px;
+  //     width: 180px;
+  //     font-size: 1em;
+  //     top: -16px;
+  //   }
+  //   .callout {
+  //     position: relative;
+  //     top: -85px;
+  //     left: -19px;
+  //     height: 50px;
+  //     width: 155px;
+  //     margin: 18px 20px 3px;
+  //     padding: 44px 20px;
+  //     background-color: #eef4f9;
+  //     -moz-border-radius: 6px;
+  //     -webkit-border-radius: 6px;
+  //     border-radius: 6px;
+  //   }
+  //   .callout .notch {
+  //     position: absolute;
+  //     top: 86px;
+  //     left: 67px;
+  //     margin: 0;
+  //     border-top: 0;
+  //     border-left: 10px solid transparent;
+  //     border-right: 10px solid transparent;
+  //     border-top: 18px solid #eef4f9;
+  //     padding: 0;
+  //     width: 0;
+  //     height: 0;
+  //     font-size: 0;
+  //     line-height: 0;
+  //     _border-right-color: pink;
+  //     _border-left-color: pink;
+  //     _filter: chroma(color=pink);
+  //   }
+  // }*/
   #dot6 {
+    @include top-callout(205);
     position: absolute;
-    left: 327px;
+    left: 430px;
     top: 177px;
     h3 {
       position: absolute;
@@ -279,44 +284,13 @@
     }
     h4 {
       position: absolute;
-      left: 38px;
       width: 180px;
       font-size: 1em;
-      top: 122px;
-    }
-    .callout {
-      position: relative;
-      top: 59px;
-      left: -15px;
-      height: 50px;
-      width: 200px;
-      margin: 18px 20px 3px;
-      padding: 44px 20px;
-      background-color: #eef4f9;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-    }
-    .callout .notch {
-      position: absolute;
-      top: -18px;
-      left: 64px;
-      margin: 0;
-      border-top: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 18px solid #eef4f9;
-      padding: 0;
-      width: 0;
-      height: 0;
-      font-size: 0;
-      line-height: 0;
-      _border-right-color: pink;
-      _border-left-color: pink;
-      _filter: chroma(color=pink);
+      top: -22px;
     }
   }
   #dot7 {
+    @include bottom-callout(170);
     position: absolute;
     left: 645px;
     top: 177px;
@@ -328,44 +302,14 @@
     }
     h4 {
       position: absolute;
-      left: 17px;
+      left: -7px;
       width: 180px;
       font-size: 1em;
-      top: -21px;
-    }
-    .callout {
-      position: relative;
-      top: -85px;
-      left: -9px;
-      height: 50px;
-      width: 155px;
-      margin: 18px 20px 3px;
-      padding: 44px 20px;
-      background-color: #eef4f9;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-    }
-    .callout .notch {
-      position: absolute;
-      top: 86px;
-      left: 58px;
-      margin: 0;
-      border-top: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 18px solid #eef4f9;
-      padding: 0;
-      width: 0;
-      height: 0;
-      font-size: 0;
-      line-height: 0;
-      _border-right-color: pink;
-      _border-left-color: pink;
-      _filter: chroma(color=pink);
+      top: 122px;
     }
   }
   #dot8 {
+    @include top-callout(170);
     position: absolute;
     left: 800px;
     top: 177px;
@@ -377,41 +321,10 @@
     }
     h4 {
       position: absolute;
-      left: -38px;
+      left: 0px;
       width: 180px;
       font-size: 1em;
-      top: 122px;
-    }
-    .callout {
-      position: relative;
-      top: 59px;
-      left: -65px;
-      height: 50px;
-      width: 155px;
-      margin: 18px 20px 3px;
-      padding: 44px 20px;
-      background-color: #eef4f9;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-    }
-    .callout .notch {
-      position: absolute;
-      top: -18px;
-      left: 113px;
-      margin: 0;
-      border-top: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 18px solid #eef4f9;
-      padding: 0;
-      width: 0;
-      height: 0;
-      font-size: 0;
-      line-height: 0;
-      _border-right-color: pink;
-      _border-left-color: pink;
-      _filter: chroma(color=pink);
+      top: -22px;
     }
   }
   display: inline-block;
