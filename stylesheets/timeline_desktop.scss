@@ -311,6 +311,7 @@
   #dot8 {
     @include top-callout(160);
     .callout { left: -50px; }
+    .callout .notch { left: 97px; }
     position: absolute;
     left: 800px;
     top: 177px;

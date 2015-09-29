@@ -968,6 +968,8 @@ footer {
         _filter: chroma(color=pink); }
       .timeline #dot8 .callout {
         left: -50px; }
+      .timeline #dot8 .callout .notch {
+        left: 97px; }
       .timeline #dot8 h3 {
         position: absolute;
         left: -84px;
