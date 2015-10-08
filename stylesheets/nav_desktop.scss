@@ -32,7 +32,7 @@ nav {
   }
   li {
     padding: 0px 3px;
-    font-size: modular-scale(-2);
+    font-size: modular-scale(-1);
     border-right: 2px solid $green;
     &:last-child { border-right: none; }
     display: inline;
@@ -73,7 +73,7 @@ nav {
     display: inline;
     &:first-child { padding-left: 0px; }
     &:last-child { padding-right: 28px; }
-    font-size: modular-scale(0);
-    font-weight: 100;
+    font-size: modular-scale(-1);
+    letter-spacing: 1;
   }
 }

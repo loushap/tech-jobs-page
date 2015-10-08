@@ -56,6 +56,11 @@ h1, h2 {
   font-weight: 100;
   margin-bottom: 50px;
 }
+
+.get-involved p {
+  text-align: center;
+}
+
 .eligibility {
   @include span-columns(12);
   h3 {

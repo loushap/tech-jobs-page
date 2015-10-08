@@ -217,6 +217,9 @@ h1, h2 {
   font-weight: 100;
   margin-bottom: 50px; }
 
+.get-involved p {
+  text-align: center; }
+
 .eligibility {
   float: left;
   display: block;
@@ -1105,7 +1108,7 @@ footer {
         display: table; }
     nav li {
       padding: 0px 3px;
-      font-size: 0.56278em;
+      font-size: 0.75019em;
       border-right: 2px solid #16DDA4;
       display: inline; }
       nav li:last-child {
@@ -1139,8 +1142,8 @@ footer {
       display: inline;
       float: left;
       display: inline;
-      font-size: 1em;
-      font-weight: 100; }
+      font-size: 0.75019em;
+      letter-spacing: 1; }
       nav li:first-child {
         padding-left: 0px; }
       nav li:last-child {

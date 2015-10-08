@@ -1,4 +1,4 @@
-.key-dates { 
+.key-dates {
   position: relative;
   @include clearfix;
   h2 {
@@ -9,16 +9,16 @@
   width: 100%;
   position: relative;
   @include clearfix;
-  .key-date { 
+  .key-date {
     width: 100%;
-    h3, h4 { 
+    h3, h4 {
       width: 50%;
     }
-    span { 
-      margin-left: -8.5px; 
+    span {
+      margin-left: -8.5px;
       left: 50.1%;
       top: 2px;
-    } 
+    }
   }
   #dot1{
     position: absolute;
