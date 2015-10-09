@@ -6,9 +6,10 @@
 @import "timeline_1px";
 @import "footer_1px";
 @import "mailchimp_1px";
+@import "share";
 
 @media screen and (max-width: 750px) {
-	@import "nav_1px";	
+	@import "nav_1px";
 }
 
 @media screen and (min-width: 750px) {

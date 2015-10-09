@@ -432,6 +432,18 @@ footer {
   text-decoration: none;
   border: none; }
 
+.share img {
+  width: 300px; }
+.share section {
+  padding-top: 100px; }
+  .share section h2 {
+    font-size: 2em; }
+  .share section p {
+    font-size: 1em;
+    font-weight: normal; }
+  .share section .description {
+    font-weight: 100; }
+
 @media screen and (max-width: 750px) {
   .nav-bar {
     float: left;
