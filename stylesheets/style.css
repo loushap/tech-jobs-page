@@ -484,7 +484,7 @@ footer {
           margin-right: 0; }
         .nav-bar nav .nav-list li #apply {
           background: #16dda4;
-          color: yellow; }
+          padding: 5px 20px; }
         .nav-bar nav .nav-list ul {
           z-index: 9;
           padding-left: 0;
