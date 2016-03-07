@@ -11,6 +11,21 @@
       font-weight: 900;
     }
   }
+
+  li:nth-last-child(2){
+    border-right: none;
+  }
+
+  a#apply {
+    background: $green;
+    padding: 5px 20px;
+
+    &:hover {
+      color: white;
+      font-weight: 900;
+    }
+  }
+
   z-index: 9;
   background-color: rgba(0, 0, 0, .7);
   top: 0px;

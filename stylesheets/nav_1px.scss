@@ -17,12 +17,17 @@
   position: fixed;
   }
 nav {
-  button { 
+  button {
     float:right;
   }
   .nav-list {
     @include span-columns(12);
     display: none;
+
+    li #apply {
+      background: $green;
+      color: yellow;
+    }
 
     ul {
       z-index: 9;
@@ -50,13 +55,14 @@ nav {
 
         }
     }
-    a { 
-      color: white; 
+    a {
+      color: white;
       text-decoration: none;
     }
     a:hover {
       color: $green;
     }
+
   }
   .c-hamburger {
     top: 0px;
@@ -134,5 +140,4 @@ nav {
   }
 
   }
-  
 }

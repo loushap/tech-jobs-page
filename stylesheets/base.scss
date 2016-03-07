@@ -18,6 +18,10 @@ body {
 a {
   color: white;
   text-decoration: none;
+
+  &:hover {
+    font-weight: 900;
+  }
 }
 
 p > a, li a {
